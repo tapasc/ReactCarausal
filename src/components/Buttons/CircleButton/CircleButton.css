@@ -1,0 +1,21 @@
+.btn:hover {
+    background-color: #fff;
+    color: red
+}
+
+.ButtonCSS {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDE6ED;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.ButtonCSS:hover {
+    background-color: #464f55;
+    color: #fff
+}

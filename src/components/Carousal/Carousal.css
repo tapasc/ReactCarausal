@@ -1,0 +1,40 @@
+.CarousalOuter {
+    width: 100%;
+    height: calc(100% - 60px);
+    /* border: 10px solid #2B3A55; */
+    border-bottom: 10px solid #2B3A55;
+    border-right: 10px solid #2B3A55;
+    border-left: 10px solid #2B3A55;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.inner_container {
+    max-width: 960px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+}
+
+
+
+.LeftPanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.MainPanel {}
+
+
+.RightPanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+;
