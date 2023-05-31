@@ -11,7 +11,7 @@ const useImageStore = ({ initialState = 0, maxLength }) => {
       if (+previousState < +(maxLength - 1)) {
         return previousState + 1;
       } else {
-        return previousState;
+        return 0;
       }
     });
   }
@@ -20,7 +20,7 @@ const useImageStore = ({ initialState = 0, maxLength }) => {
       if (+previousState >= 1) {
         return previousState - 1;
       } else {
-        return previousState;
+        return +maxLength - 1;
       }
     });
   }
