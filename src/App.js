@@ -18,10 +18,24 @@ function App() {
   );
 
   const onNext = () => {
-    dispatch({ type: "Go_Next" });
+    if (App_Reducer_State.ImageIndex + 1 >= App_Reducer_State.maxLength) {
+      dispatch({ type: "Go_Next", payload: 0 });
+    } else {
+      dispatch({ type: "Go_Next", payload: App_Reducer_State.ImageIndex + 1 });
+    }
   };
   const onBack = () => {
-    dispatch({ type: "Go_Previous" });
+    if (App_Reducer_State.ImageIndex - 1 <= 0) {
+      dispatch({
+        type: "Go_Previous",
+        payload: App_Reducer_State.maxLength - 1,
+      });
+    } else {
+      dispatch({
+        type: "Go_Previous",
+        payload: App_Reducer_State.ImageIndex - 1,
+      });
+    }
   };
 
   const currentImage = imageList[App_Reducer_State.ImageIndex];
